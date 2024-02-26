@@ -1,0 +1,10 @@
+ID je jedinstveni identifikator pružaoca usluga.
+Username je korisničko ime pružaoca usluga.
+Qualification je kvalifikacija pružaoca usluga.
+Description je opis pružaoca usluga.
+ServicesOffered su ponuđene usluge pružaoca usluga.
+AreaCovered je područje koje pružalac usluga pokriva.
+EffectiveTime je efektivno vreme trajanja usluge.
+Availability predstavlja dostupnost pružaoca usluga, formatirana kao JSON objekat koji može sadržati informacije o raspoloživim terminima za pružanje usluga.
+ Polje Availability je definisano kao JSONB tip podataka kako bi se mogli sačuvati složeniji podaci o dostupnosti pružaoca usluga, kao što je formatiranje kao kalendar.
+Ovde će biti sačuvani podaci u JSON formatu, a aplikacija će biti odgovorna za interpretaciju i manipulaciju ovih podataka
