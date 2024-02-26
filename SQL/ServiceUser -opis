@@ -1,0 +1,33 @@
+Tabela ServiceUser sadrži informacije o korisnicima usluga. Svaki red u ovoj tabeli predstavlja jednog korisnika usluga. Opis kolona:
+ID: Jedinstveni identifikator korisnika, automatski generisan.
+FirstName: Ime korisnika, ne može biti prazno.
+LastName: Prezime korisnika, ne može biti prazno.
+Email: Email adresa korisnika.
+PhoneNumber: Broj telefona korisnika, obavezno polje.
+AccountNumber: Broj korisničkog računa, obavezno polje.
+GracePeriod: Period odobrenja (u danima) za plaćanje nakon isteka pretplate, podrazumevana vrednost je 7 dana.
+Address: Adresa korisnika.
+SubscriptionID: Identifikator pretplate korisnika. Postaje NULL ako je period odobrenja ili datum sledeće uplate istekao.
+SubscriptionStatus: Status pretplate korisnika. Podrazumevana vrednost je "Inactive" ako je datum pretplate NULL, inače može biti "Active" ili "Suspended".
+NextPaymentDate: Datum sledeće zakazane uplate.
+BillingCycle: Ciklus naplate pretplate, podrazumevana vrednost je "Monthly" (mesečno).
+Ova tabela se koristi za praćenje informacija o korisnicima usluga, uključujući njihove lične podatke, informacije o pretplati i adrese.
+
+ZA  PYTHON
+Opis logike koja će biti implementirana putem Pythona za ServiceUser tabelu:
+Logika za Period odobrenja (Grace Period):
+
+Kreirati planirani zadatak (scheduled task) ili koristiti cron job(hronoloski posao) u Pythonu koji će se izvršavati svakih 24 sata.
+Za svakog korisnika u bazi podataka, smanjiti vrednost GracePeriod kolone za jedan dan.
+Ažurirati bazu podataka sa novim vrednostima GracePeriod.
+Logika za Datum sledeće uplate (Next Payment Date):
+
+Implementirati logiku u Pythonu koja će računati datum sledeće uplate na osnovu trenutnog datuma i ciklusa naplate (mesečno).
+Logika za Status pretplate (Subscription Status):
+
+Implementirati logiku u Pythonu koja će odrediti SubscriptionStatus na osnovu SubscriptionID, NextPaymentDate i drugih relevantnih faktora.
+Ako SubscriptionID postane NULL ili NextPaymentDate istekne, SubscriptionStatus će biti postavljen na "Inactive". Inače, može biti "Active" ili "Suspended".
+Automatska naplata (Automatic Payment):
+
+Implementirati logiku u Pythonu koja će automatski naplatiti korisnike na osnovu NextPaymentDate.
+Ova logika će se izvršavati unutar aplikacije napisane u Pythonu.
