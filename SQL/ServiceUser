@@ -1,0 +1,14 @@
+CREATE TABLE ServiceUser (
+    ID BIGSERIAL PRIMARY KEY,
+    FirstName VARCHAR(255) NOT NULL,
+    LastName VARCHAR(255) NOT NULL,
+    Email VARCHAR(255),
+    PhoneNumber VARCHAR(20) NOT NULL,
+    AccountNumber VARCHAR(255) NOT NULL,
+    GracePeriod INTEGER DEFAULT 7, -- Default grace period of 7 days
+    Address VARCHAR(255),
+    SubscriptionID BIGINT, -- SubscriptionID becomes NULL if grace period or next payment date is passed
+    SubscriptionStatus VARCHAR(50) DEFAULT 'Inactive', -- Default status is Inactive if subscription date is NULL, can be 'Active' or 'Suspended'
+    NextPaymentDate DATE, -- Date of the next scheduled payment
+    BillingCycle VARCHAR(50) DEFAULT 'Monthly' -- Fixed monthly billing cycle
+);
