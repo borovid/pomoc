@@ -1,10 +1,19 @@
-ID je jedinstveni identifikator pružaoca usluga.
-Username je korisničko ime pružaoca usluga.
-Qualification je kvalifikacija pružaoca usluga.
-Description je opis pružaoca usluga.
-ServicesOffered su ponuđene usluge pružaoca usluga.
-AreaCovered je područje koje pružalac usluga pokriva.
-EffectiveTime je efektivno vreme trajanja usluge.
-Availability predstavlja dostupnost pružaoca usluga, formatirana kao JSON objekat koji može sadržati informacije o raspoloživim terminima za pružanje usluga.
- Polje Availability je definisano kao JSONB tip podataka kako bi se mogli sačuvati složeniji podaci o dostupnosti pružaoca usluga, kao što je formatiranje kao kalendar.
-Ovde će biti sačuvani podaci u JSON formatu, a aplikacija će biti odgovorna za interpretaciju i manipulaciju ovih podataka
+Tabela ServiceProvider sadrži informacije o pružaocima usluga.
+
+ID: Jedinstveni identifikator pružaoca usluge.
+FirstName: Ime pružaoca usluge.
+LastName: Prezime pružaoca usluge.
+PhoneNumber: Broj telefona pružaoca usluge.
+Email: Email adresa pružaoca usluge.
+Username: Korisničko ime pružaoca usluge.
+Qualification: Kvalifikacija ili stručnost pružaoca usluge.
+Description: Opis pružene usluge.
+YouTubeLink: Link ka YouTube profilu pružaoca usluge (opciono).
+LinkedInLink: Link ka LinkedIn profilu pružaoca usluge (opciono).
+FacebookLink: Link ka Facebook profilu pružaoca usluge (opciono).
+ServicesOffered: Ponuđene usluge pružaoca.
+AreaCovered: Područje koje pružalac usluge pokriva.
+EffectiveTime: Efektivno vreme koje pružalac usluge može posvetiti svakom korisniku.
+Availability: Dostupnost pružaoca usluge, može sadržati informacije o raspoloživosti u obliku JSON-a.
+Ova tabela omogućava praćenje i upravljanje informacijama o pružaocima usluga, uključujući detalje o njihovim uslugama, kvalifikacijama i dostupnosti,
+kao i opcione veze ka njihovim profilima na društvenim mrežama poput YouTube-a, LinkedIn-a i Facebook-a.
