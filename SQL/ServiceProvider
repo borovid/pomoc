@@ -1,0 +1,10 @@
+CREATE TABLE ServiceProvider (
+    ID BIGSERIAL PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL,
+    Qualification VARCHAR(255) NOT NULL,
+    Description TEXT,
+    ServicesOffered VARCHAR(255) NOT NULL,
+    AreaCovered VARCHAR(255),
+    EffectiveTime INTERVAL NOT NULL,
+    Availability JSONB -- Formatiranje dostupnosti kao JSON objekat
+);
