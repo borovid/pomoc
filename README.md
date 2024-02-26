@@ -41,9 +41,3 @@ povećanje obima posla i moguće povecanje cene svog rada na osnovu pozitivnih k
 Sta nudi korisnicima, takođe sigurnost, proverene osobe koje pružaju pomoć uz praćenu komunikaciju, 
 jednostavnost nalaženja više vrsta pomoći kad im je neophodna u vreme kad im odgovara, biranje osobe koja bi vršila uslugu na osnovu uvida u njihove sposobnosti i nalaženje best deal opcija.
 
-
-
-Treba odraditi
-Istražiti potrebe ciljne grupe (starija lica i osobe koje brinu o njima).
-funkcionalnosti i karakteristike aplikacije.
-Razmotrite zakonske regulative i potrebne dozvole.
