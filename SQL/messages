@@ -1,0 +1,23 @@
+CREATE TABLE ServiceUserMessage (
+    MessageID SERIAL PRIMARY KEY,
+    ServiceUserID INTEGER NOT NULL, -- References the ID of the ServiceUser
+    RecipientID INTEGER NOT NULL, -- References the ID of the recipient
+    MessageText TEXT NOT NULL,
+    AttachmentLink VARCHAR(255), -- Link to the attachment (if any)
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ReadStatus BOOLEAN NOT NULL,
+    MessageStatus VARCHAR(50), -- Delivered, Failed, Read, etc.
+    -- Add any other relevant columns
+);
+
+CREATE TABLE ServiceProviderMessage (
+    MessageID SERIAL PRIMARY KEY,
+    ServiceProviderID INTEGER NOT NULL, -- References the ID of the ServiceProvider
+    RecipientID INTEGER NOT NULL, -- References the ID of the recipient
+    MessageText TEXT NOT NULL,
+    AttachmentLink VARCHAR(255), -- Link to the attachment (if any)
+    Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ReadStatus BOOLEAN NOT NULL,
+    MessageStatus VARCHAR(50), -- Delivered, Failed, Read, etc.
+    -- Add any other relevant columns
+);
