@@ -1,0 +1,10 @@
+CREATE TABLE HelpRecipient (
+    ID SERIAL PRIMARY KEY,
+    UserID INTEGER REFERENCES ServiceUser(ID),
+    ServiceProviderID INTEGER REFERENCES ServiceProvider(ID),
+    Address VARCHAR(255),
+    Age INTEGER NOT NULL,
+    Gender VARCHAR(10) NOT NULL,
+    Description VARCHAR(255) NOT NULL,
+    MobilityStatus VARCHAR(20) NOT NULL
+);
