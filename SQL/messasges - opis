@@ -1,0 +1,27 @@
+Tabela ServiceUserMessage:
+
+Ova tabela čuva poruke koje su poslate od strane Servisnih Korisnika.
+Svaka poruka ima jedinstveni ID (MessageID).
+Polje ServiceUserID je referenca na ID Servisnog Korisnika koji je poslao poruku.
+Polje PrimalacID je referenca na ID primaoca poruke.
+TekstPoruke čuva sadržaj poruke.
+LinkPriloge čuva link ka prilogu koji je povezan sa porukom, ukoliko prilog postoji. Prilog se čuva u Google Drive primaoca
+Vreme čuva tačno vreme kada je poruka poslata.
+StatusCitanja označava da li je poruka pročitana ili ne.
+StatusPoruke označava trenutni status poruke, kao što su Isporučeno, Neuspelo, Pročitano, itd.
+
+Tabela ServiceProviderMessage:
+
+Ova tabela čuva poruke koje su poslate od strane Pružalaca Usluge.
+Svaka poruka takođe ima jedinstveni ID (MessageID).
+Polje ServiceProviderID je referenca na ID Pružaoca Usluge koji je poslao poruku.
+Polje PrimalacID je referenca na ID primaoca poruke.
+TekstPoruke čuva sadržaj poruke.
+LinkPriloge čuva link ka prilogu koji je povezan sa porukom, ukoliko prilog postoji. Prilog se čuva u Google Drive primaoca
+Vreme čuva tačno vreme kada je poruka poslata.
+StatusCitanja označava da li je poruka pročitana ili ne.
+StatusPoruke označava trenutni status poruke, kao što su Isporučeno, Neuspelo, Pročitano, itd.
+Ove tabele omogućavaju praćenje i upravljanje porukama između Servisnih Korisnika i Pružalaca Usluge u okviru aplikacije.
+
+Za dodavanje funkcije online video poziva i poziva https://webrtc.org/
+
