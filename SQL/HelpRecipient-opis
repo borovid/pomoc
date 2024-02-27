@@ -1,0 +1,10 @@
+Tabela HelpRecipient služi za čuvanje informacija o korisnicima koji su primaoci pomoći. Primaoci pomoći mogu biti ili korisnici usluga (ServiceUser) ili pružaoci usluga (ServiceProvider). Jedan ServiceUser može imati više korisnika pomoći. Ova tabela omogućava praćenje osnovnih informacija o korisnicima pomoći, uključujući njihovu adresu, godine, pol, opis stanja i mobilnost. Dodatno, tabela sadrži referencu na korisnika koji je dodao primaoca pomoći, bilo da je to ServiceUser ili ServiceProvider. Ovo omogućava praćenje informacija o tome ko je dodao korisnika pomoći u sistem.
+
+ID: Jedinstveni identifikator za svakog primaoca pomoći.
+UserID: ID korisnika usluga (ServiceUser) koji je primaoca pomoći, ukoliko je primaoca pomoći dodao korisnik usluga.
+ServiceProviderID: ID pružaoca usluga (ServiceProvider) koji je primaoca pomoći, ukoliko je primaoca pomoći dodao pružalac usluga.
+Address: Adresa primaoca pomoći.
+Age: Godine primaoca pomoći.
+Gender: Pol primaoca pomoći.
+Description: Dodatni opis stanja ili potreba primaoca pomoći.
+MobilityStatus: Status pokretljivosti primaoca pomoći (na primer, pokretna, nepokretna).
