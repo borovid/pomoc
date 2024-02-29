@@ -1,0 +1,7 @@
+Tabela "Service" se koristi za čuvanje informacija o vrstama usluga koje pružaoci usluga mogu pružiti. Evo objašnjenja kolona u tabeli:
+
+ID: Jedinstveni identifikator usluge.
+Name: Naziv usluge.
+Price: Cena usluge (numerik, 10 cifara u celini i 2 decimalna mesta), podrazumevana vrednost je 0.0.
+Description: Opis usluge (tekstualni podatak), podrazumevana vrednost je "N/A" (nije dostupno).
+Ova tabela omogućava čuvanje informacija o različitim vrstama usluga koje pružaoci usluga nude, uključujući njihov naziv, cenu i opis.
