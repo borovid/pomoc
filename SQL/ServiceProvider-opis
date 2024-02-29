@@ -11,7 +11,6 @@ Description: Opis pružene usluge.
 YouTubeLink: Link ka YouTube profilu pružaoca usluge (opciono).
 LinkedInLink: Link ka LinkedIn profilu pružaoca usluge (opciono).
 FacebookLink: Link ka Facebook profilu pružaoca usluge (opciono).
-ServicesOffered: Ponuđene usluge pružaoca.
 AreaCovered: Područje koje pružalac usluge pokriva.
 EffectiveTime: Efektivno vreme koje pružalac usluge može posvetiti svakom korisniku.
 Availability: Dostupnost pružaoca usluge, može sadržati informacije o raspoloživosti u obliku JSON-a.
