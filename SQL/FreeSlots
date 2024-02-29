@@ -1,0 +1,9 @@
+Tabela "FreeSlots" se koristi za praćenje slobodnih vremenskih slotova ili termina koje pružaoci usluga imaju na raspolaganju za pružanje određenih usluga. Evo objašnjenja kolona u tabeli:
+
+ID: Jedinstveni identifikator slobodnog vremenskog slota.
+ServiceProviderID: Referenca na ID pružaoca usluga koji je dostupan u tom vremenskom slotu.
+Date: Datum kada je slobodni vremenski slot dostupan.
+StartTime: Vreme početka slobodnog vremenskog slota.
+EndTime: Vreme završetka slobodnog vremenskog slota.
+ServiceID: Referenca na ID usluge koja je dostupna u tom vremenskom slotu.
+Ova tabela omogućava korisnicima usluga da pregledaju dostupne termine pružaoca usluga i odaberu vreme koje im najviše odgovara za pružanje određene usluge.
