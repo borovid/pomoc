@@ -1,0 +1,10 @@
+Tabela "Review" se koristi za čuvanje recenzija i ocena korisnika usluge (ServiceUser) o pružaocima usluga (ServiceProvider). Evo objašnjenja kolona u tabeli:
+
+ID: Jedinstveni identifikator recenzije.
+ServiceUserID: Referenca na ID korisnika usluge koji je ostavio recenziju.
+ServiceProviderID: Referenca na ID pružaoca usluge koji je recenziran.
+ReviewerID: Referenca na ID pružaoca usluge koji je ostavio recenziju (može biti isti kao i ServiceProviderID ako je sam pružalac usluge ostavio recenziju).
+Rating: Ocena recenzije (broj od 1 do 5).
+Comment: Tekstualni komentar koji prati recenziju.
+ReviewDateTime: Datum i vreme kada je recenzija napravljena.
+Ova tabela omogućava korisnicima usluga da ostave recenzije i ocene o pružaocima usluga kako bi drugi korisnici mogli da procene kvalitet usluge i poverenje u pružaoce usluga.
