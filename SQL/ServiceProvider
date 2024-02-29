@@ -10,7 +10,6 @@ CREATE TABLE ServiceProvider (
     YouTubeLink VARCHAR(255),
     LinkedInLink VARCHAR(255),
     FacebookLink VARCHAR(255),
-    ServicesOffered VARCHAR(255) NOT NULL,
     AreaCovered VARCHAR(255),
     EffectiveTime INTERVAL NOT NULL,
     Availability JSONB
