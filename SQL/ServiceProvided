@@ -1,0 +1,8 @@
+CREATE TABLE ServiceProvided (
+    ID SERIAL PRIMARY KEY,
+    ServiceProviderID BIGINT REFERENCES ServiceProvider(ID),
+    HelpRecipientID BIGINT REFERENCES HelpRecipient(ID),
+    ServiceID BIGINT REFERENCES Service(ID),
+    DateProvided DATE NOT NULL,
+    StartTime TIME NOT NULL,
+    EndTime TIME NOT NULL
