@@ -1,0 +1,7 @@
+Tabela "Location" služi za čuvanje geografskih lokacija korisnika koji traže pomoć (HelpRecipient). Evo objašnjenja kolona u tabeli:
+
+ID: Jedinstveni identifikator lokacije.
+HelpRecipientID: Referenca na ID korisnika koji traži pomoć (HelpRecipient) čija je lokacija pohranjena u ovoj tabeli.
+Latitude: Geografska širina lokacije.
+Longitude: Geografska dužina lokacije.
+Ova tabela omogućava praćenje geografskih koordinata korisnika koji traže pomoć kako bi se bolje razumela njihova lokacija i omogućila pravilna distribucija usluga.
