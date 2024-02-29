@@ -1,0 +1,5 @@
+CREATE TABLE Location (
+    ID SERIAL PRIMARY KEY,
+    HelpRecipientID BIGINT REFERENCES HelpRecipient(ID),
+    Latitude NUMERIC(10, 6),
+    Longitude NUMERIC(10, 6)
