@@ -1,0 +1,5 @@
+CREATE TABLE Service (
+    ID SERIAL PRIMARY KEY,
+    Name VARCHAR(255) NOT NULL,
+    Price NUMERIC(10, 2) DEFAULT 0.0,
+    Description TEXT DEFAULT 'N/A'
