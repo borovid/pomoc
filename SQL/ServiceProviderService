@@ -1,0 +1,7 @@
+CREATE TABLE ServiceProviderService (
+    ID BIGSERIAL PRIMARY KEY,
+    ServiceProviderID BIGINT REFERENCES ServiceProvider(ID),
+    ServiceID BIGINT REFERENCES Service(ID),
+    CONSTRAINT FK_ServiceProviderService_ServiceProvider FOREIGN KEY (ServiceProviderID) REFERENCES ServiceProvider(ID),
+    CONSTRAINT FK_ServiceProviderService_Service FOREIGN KEY (ServiceID) REFERENCES Service(ID)
+);
