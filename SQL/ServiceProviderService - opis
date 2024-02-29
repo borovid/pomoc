@@ -1,0 +1,7 @@
+Tabela ServiceProviderService predstavlja veznu tabelu koja uspostavlja odnos "mnogo-na-mnogo" između pružalaca usluga (ServiceProvider) i usluga (Service). 
+Ova tabela omogućava mapiranje pružalaca usluga sa uslugama koje pružaju.
+
+ID: Jedinstveni identifikator zapisa u tabeli. Tip podataka: BIGSERIAL.
+ServiceProviderID: Identifikator pružaoca usluge koji referencira ID pružaoca usluge u tabeli ServiceProvider. Tip podataka: BIGINT.
+ServiceID: Identifikator usluge koji referencira ID usluge u tabeli Service. Tip podataka: BIGINT.
+Ovaj pristup omogućava pružaocima usluga da nude više različitih usluga, dok svaka usluga može biti pružena od strane više pružalaca usluga.
