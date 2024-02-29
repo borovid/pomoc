@@ -1,0 +1,8 @@
+CREATE TABLE FreeSlots (
+    ID SERIAL PRIMARY KEY,
+    ServiceProviderID INTEGER REFERENCES ServiceProvider(ID),
+    Date DATE NOT NULL,
+    StartTime TIME NOT NULL,
+    EndTime TIME NOT NULL,
+    ServiceID INTEGER REFERENCES Service(ID) NOT NULL
+);
