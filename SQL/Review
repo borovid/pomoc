@@ -1,0 +1,9 @@
+CREATE TABLE Review (
+    ID SERIAL PRIMARY KEY,
+    ServiceUserID INTEGER REFERENCES ServiceUser(ID),
+    ServiceProviderID INTEGER REFERENCES ServiceProvider(ID),
+    ReviewerID INTEGER REFERENCES ServiceProvider(ID),
+    Rating INTEGER NOT NULL,
+    Comment TEXT,
+    ReviewDateTime TIMESTAMP NOT NULL
+);
